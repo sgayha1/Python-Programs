@@ -1,1 +1,32 @@
+===============================================================================================================================
+                                                 Simple Calculator Program
+===============================================================================================================================
 
+Overview: This program operates as a calculator. The user will input two numbers then choose what operation they want to perform.
+After that, the operation will be added to a list and will display on the screen. The user can either do more operations or stop
+the program. At the end, the user can screenshot the list of operations.
+
+main: 
+  The main program code is inside a try except to make sure the input is correct, preventing a crash. First, the user inputs 
+  two numbers they want to perform arithmetic on. Then, the user choses what operand they want. That number is passed into 
+  "operation.get(num)" to get the corresponding number's operation in the dictionary, where the value calls to the specific 
+  operand function. Then, the first number, operand, and the second number are added to another dictionary. The content of that
+  are displayed on the screen then the user can continue to use the program until they are out of problems.
+  
+addition(first, second): 
+  Adds the first and second number then returns the sum.
+
+subtraction(first, second):
+  Subtracts the first and second number then returns the difference.
+
+multiplication(first, second):
+  Multiplies the first and second number then returns the product.
+
+division(first, second):
+  Divides the first and second number then returns the result.
+
+modulo(first, second):
+  Gets the remainder of the first and second number then returns it.
+
+display:
+  Will display all operations/arithmetic performed throughout the program.
